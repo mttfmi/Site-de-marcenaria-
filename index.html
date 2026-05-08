@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Marcenaria do Carlito</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- HEADER / NAVEGAÇÃO -->
+  <header id="topo">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">🪵</span>
+        <div>
+          <h1>Marcenaria do Carlito</h1>
+          <p class="tagline">Tradição em madeira, qualidade na sua casa</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+    </div>
+    <nav class="mobile-nav" id="mobileNav">
+      <a href="#sobre" onclick="toggleMenu()">Sobre</a>
+      <a href="#servicos" onclick="toggleMenu()">Serviços</a>
+      <a href="#contato" onclick="toggleMenu()">Contato</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h2>Feito à mão,<br/><span>com amor e experiência</span></h2>
+      <p>Móveis sob medida com a qualidade de quem dedica a vida à madeira.</p>
+      <a href="#contato" class="btn-hero">Solicitar Orçamento</a>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="sobre">
+    <div class="container">
+      <div class="sobre-texto">
+        <span class="secao-label">Quem somos</span>
+        <h2>A Marcenaria do Carlito</h2>
+        <p>
+          Há décadas, o Carlito transforma madeira em arte. Com dedicação, experiência e o
+          cuidado de quem ama o que faz, cada peça é trabalhada com atenção aos detalhes
+          e respeito pelo cliente.
+        </p>
+        <p>
+          Nosso trabalho vai além de móveis — criamos peças que duram gerações, pensadas
+          para o seu espaço e do seu jeito.
+        </p>
+        <div class="sobre-destaques">
+          <div class="destaque">
+            <i class="fas fa-hammer"></i>
+            <span>Trabalho artesanal</span>
+          </div>
+          <div class="destaque">
+            <i class="fas fa-ruler-combined"></i>
+            <span>Sob medida</span>
+          </div>
+          <div class="destaque">
+            <i class="fas fa-star"></i>
+            <span>Qualidade garantida</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos" class="servicos">
+    <div class="container">
+      <span class="secao-label claro">O que fazemos</span>
+      <h2>Nossos Serviços</h2>
+      <div class="servicos-grid">
+        <div class="card-servico">
+          <div class="card-icon">🪑</div>
+          <h3>Cadeiras</h3>
+          <p>Cadeiras artesanais em madeira maciça, confortáveis e duráveis para sala de jantar, escritório ou varanda.</p>
+        </div>
+        <div class="card-servico">
+          <div class="card-icon">🪞</div>
+          <h3>Mesas</h3>
+          <p>Mesas de jantar, de centro, laterais e de trabalho — feitas sob medida conforme o seu espaço.</p>
+        </div>
+        <div class="card-servico">
+          <div class="card-icon">🚪</div>
+          <h3>Armários</h3>
+          <p>Armários planejados para quarto, cozinha ou área de serviço, com acabamento impecável.</p>
+        </div>
+        <div class="card-servico">
+          <div class="card-icon">🛠️</div>
+          <h3>Outros Móveis</h3>
+          <p>Estantes, nichos, camas, bancos e muito mais. Se é de madeira, o Carlito faz!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="contato">
+    <div class="container contato-wrapper">
+
+      <!-- Informações -->
+      <div class="contato-info">
+        <span class="secao-label claro">Fale conosco</span>
+        <h2>Entre em Contato</h2>
+        <p>Solicite um orçamento sem compromisso. Atendemos em São Gonçalo e região.</p>
+
+        <div class="info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <strong>Endereço</strong>
+            <span>Rua Capitão Costa, 26 — Brasilândia, São Gonçalo - RJ</span>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <i class="fab fa-whatsapp"></i>
+          <div>
+            <strong>WhatsApp</strong>
+            <a href="https://wa.me/5521970333864" target="_blank">(21) 97033-3864</a>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <strong>E-mail</strong>
+            <a href="mailto:mateusleste5@gmail.com">mateusleste5@gmail.com</a>
+          </div>
+        </div>
+
+        <a href="https://wa.me/5521970333864" target="_blank" class="btn-whatsapp">
+          <i class="fab fa-whatsapp"></i> Chamar no WhatsApp
+        </a>
+      </div>
+
+      <!-- Formulário -->
+      <div class="contato-form">
+        <h3>Envie uma mensagem</h3>
+        <div class="form-group">
+          <label for="nome">Seu nome</label>
+          <input type="text" id="nome" placeholder="Ex: João Silva" />
+        </div>
+        <div class="form-group">
+          <label for="telefone">Telefone / WhatsApp</label>
+          <input type="tel" id="telefone" placeholder="(21) 99999-9999" />
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail (opcional)</label>
+          <input type="email" id="email" placeholder="seu@email.com" />
+        </div>
+        <div class="form-group">
+          <label for="servico">Tipo de serviço</label>
+          <select id="servico">
+            <option value="">Selecione...</option>
+            <option value="cadeira">Cadeiras</option>
+            <option value="mesa">Mesas</option>
+            <option value="armario">Armários</option>
+            <option value="outro">Outro móvel</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" rows="4" placeholder="Descreva o que você precisa..."></textarea>
+        </div>
+        <button class="btn-enviar" onclick="enviarFormulario()">
+          <i class="fas fa-paper-plane"></i> Enviar Mensagem
+        </button>
+        <p class="form-obs" id="form-feedback"></p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <p>🪵 <strong>Marcenaria do Carlito</strong> — Rua Capitão Costa, 26, Brasilândia, São Gonçalo - RJ</p>
+      <p>
+        <a href="https://wa.me/5521970333864" target="_blank"><i class="fab fa-whatsapp"></i> (21) 97033-3864</a>
+        &nbsp;|&nbsp;
+        <a href="mailto:mateusleste5@gmail.com"><i class="fas fa-envelope"></i> mateusleste5@gmail.com</a>
+      </p>
+      <p class="footer-copy">© 2026 Marcenaria do Carlito. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
